@@ -207,6 +207,7 @@
 			});
 
 	// Main.
+	
 		var $main = $('#main');
 
 		// Thumbs.
@@ -215,6 +216,7 @@
 				var	$this = $(this),
 					$image = $this.find('.image'), $image_img = $image.children('img'),
 					x;
+					
 
 				// No image? Bail.
 					if ($image.length == 0)
@@ -234,10 +236,11 @@
 					// Hide original img.
 						$image_img.hide();
 
+
 			});
 
 		// Poptrox.
-			$main.poptrox({
+			/*$main.poptrox({
 				baseZIndex: 20000,
 				caption: function($a) {
 
@@ -259,15 +262,15 @@
 				popupLoaderText: '',
 				popupSpeed: 300,
 				popupWidth: 150,
-				selector: '.thumb > a.image',
+				selector: 'a.image',
 				usePopupCaption: true,
 				usePopupCloser: true,
 				usePopupDefaultStyling: false,
 				usePopupForceClose: true,
 				usePopupLoader: true,
 				usePopupNav: true,
-				windowMargin: 50
-			});
+				windowMargin: 50,
+			});*/
 
 			// Hack: Set margins to 0 when 'xsmall' activates.
 				breakpoints.on('<=xsmall', function() {

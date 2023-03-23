@@ -6,7 +6,14 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
+@font-face {
+    font-family: 'Stardate';
+    src: url('/assets/webfonts/Stardate_81316.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+  
 @-moz-keyframes spinner {
 	0% {
 		-moz-transform: rotate(0deg);
@@ -70,6 +77,68 @@
 		transform: rotate(359deg);
 	}
 }
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 3; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	background: rgba(31, 34, 36, 0.925);
+	box-shadow: 0 1em 3em 0.5em rgba(0, 0, 0, 0.25);
+	cursor: default;
+}
+  
+  /* Modal Content/Box */
+  .modal-content {
+	background: rgba(31, 34, 36, 0.925);
+	margin: 10% auto; /* 15% from the top and centered */
+	/*padding: 20px;*/
+	border: 1px solid #888;
+	width: 60%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .next,
+  .prev,
+  .close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	position: absolute;
+	z-index: 4;
+  }
+  .close{
+	top: 22%;
+	right: 21%;
+  }
+  .prev{
+	position: absolute;
+	top: 60%;
+	left: 21%;
+  }
+  .next{
+	position: absolute;
+	top: 60%;
+	right: 21%;
+  }
+
+  .next:hover,
+  .next:focus,
+  .prev:hover,
+  .prev.focus,
+  .close:hover,
+  .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,

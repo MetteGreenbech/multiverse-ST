@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Multiverse by HTML5 UP</title>
+		<title>Star Trek with no context</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,76 +19,72 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html"><strong>Multiverse</strong> by HTML5 UP</a></h1>
-						<nav>
-							<ul>
-								<li><a href="#footer" class="icon solid fa-info-circle">About</a></li>
-							</ul>
-						</nav>
+						<h1 style="font-family:Stardate;font-size:larger;"><bold>Star Trek with no context</bold></h1>
 					</header>
 
 				<!-- Main -->
 					<div id="main">
+						<div id="myModal" class="modal">
+							<div class="modal-content">
+								<span class="close">&times;</span>
+								<span class="prev" onclick="prevImage();">&lt;</span>
+								<span class="next" onclick="nextImage();">&gt;</span>
+								<img src="" id="modal-image" width="100%" height="100%" onerror="imageError();">
+							  </div>
+						</div>
 						<article class="thumb">
-							<a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
-							<h2>Magna feugiat lorem</h2>
+							<a class="image" onclick="showModal('images/TOS/', 2);"><img src="images/TOS/Star_Trek_TOS_cast.webp" alt="" width="360" height="247"/></a>
+							<h2>Star Trek The Original Series</h2>
+						</article>
+						<article class="thumb">
+							<a onclick="showModal('images/AS/',1)" class="image"><img src="images/AS/startrek.webp" alt="" width="360" height="247" /></a>
+							<h2>Star Trek The Animated Series</h2>
+						</article>
+						<article class="thumb">
+							<a onclick="showModal('images/TNG/', 1)" class="image"><img src="images/TNG/2020_2_6_860ce92f-3682-4d2a-b191-6a98e09c9f63_JPG_2000x1125.jpg" alt="" width="360" height="247"/></a>
+							<h2>Star Trek The Next Generation</h2>
+						</article>
+						<article class="thumb">
+							<a onclick="showModal('images/DSN/', 1)" class="image"><img src="images/thumbs/04.jpg" alt="" /></a>
+							<h2>Star Trek Deep Space Nine</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
 						<article class="thumb">
-							<a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt="" /></a>
-							<h2>Nisl adipiscing</h2>
+							<a onclick="showModal('images/VOY/', 1)" class="image"><img src="images/thumbs/05.jpg" alt="" /></a>
+							<h2>Star Trek Voyager</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
 						<article class="thumb">
-							<a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/03.jpg" alt="" /></a>
-							<h2>Tempus aliquam veroeros</h2>
+							<a onclick="showModal('images/ENT/', 1)" class="image"><img src="images/thumbs/06.jpg" alt="" /></a>
+							<h2>Star Trek Enterprise</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
 						<article class="thumb">
-							<a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt="" /></a>
-							<h2>Aliquam ipsum sed dolore</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt="" /></a>
-							<h2>Cursis aliquam nisl</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/06.jpg" class="image"><img src="images/thumbs/06.jpg" alt="" /></a>
-							<h2>Sed consequat phasellus</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/07.jpg" class="image"><img src="images/thumbs/07.jpg" alt="" /></a>
-							<h2>Mauris id tellus arcu</h2>
+							<a onclick="showModal('images/DIS/', 1)" class="image"><img src="images/thumbs/07.jpg" alt="" /></a>
+							<h2>Star Trek Discovery</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
 						<article class="thumb">
 							<a href="images/fulls/08.jpg" class="image"><img src="images/thumbs/08.jpg" alt="" /></a>
-							<h2>Nunc vehicula id nulla</h2>
+							<h2>Star Trek Lower Decks</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
 						<article class="thumb">
 							<a href="images/fulls/09.jpg" class="image"><img src="images/thumbs/09.jpg" alt="" /></a>
-							<h2>Neque et faucibus viverra</h2>
+							<h2>Star Trek Picard</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
 						<article class="thumb">
 							<a href="images/fulls/10.jpg" class="image"><img src="images/thumbs/10.jpg" alt="" /></a>
-							<h2>Mattis ante fermentum</h2>
+							<h2>Star Trek Prodigy</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
 						<article class="thumb">
 							<a href="images/fulls/11.jpg" class="image"><img src="images/thumbs/11.jpg" alt="" /></a>
-							<h2>Sed ac elementum arcu</h2>
+							<h2>Star Trek Strange New Worlds</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
-						<article class="thumb">
-							<a href="images/fulls/12.jpg" class="image"><img src="images/thumbs/12.jpg" alt="" /></a>
-							<h2>Vehicula id nulla dignissim</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
+						
 					</div>
 
 				<!-- Footer -->
@@ -148,6 +144,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/modal.js"></script>
 
 	</body>
 </html>
