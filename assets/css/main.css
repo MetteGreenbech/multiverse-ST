@@ -8,7 +8,7 @@
 */
 @font-face {
     font-family: 'Stardate';
-    src: url('/assets/webfonts/Stardate_81316.woff') format('woff');
+    src: url('../webfonts/Stardate_81316.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
