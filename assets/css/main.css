@@ -1,6 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
-@import url("../webfonts/Stardate_81316.woff");
+@import url("https://mettegreenbech.github.io/multiverse-ST/assets/webfonts/Stardate_81316.woff");
 
 /*
 	Multiverse by HTML5 UP
@@ -9,7 +9,7 @@
 */
 @font-face {
     font-family: 'Stardate';
-    src: url('../webfonts/Stardate_81316.woff') format('woff');
+    src: url('https://mettegreenbech.github.io/multiverse-ST/assets/webfonts/Stardate_81316.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
