@@ -86,7 +86,7 @@
 	top: 0;
 	width: 100%; /* Full width */
 	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
+	overflow: hidden; /* Enable scroll if needed */
 	background-color: rgb(0,0,0); /* Fallback color */
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 	background: rgba(31, 34, 36, 0.925);
@@ -97,36 +97,51 @@
   /* Modal Content/Box */
   .modal-content {
 	background: rgba(31, 34, 36, 0.925);
-	margin: 10% auto; /* 15% from the top and centered */
+	margin: 5% auto; /* 15% from the top and centered */
 	/*padding: 20px;*/
 	border: 1px solid #888;
 	width: 40%; /* Could be more or less, depending on screen size */
+	position: relative;
   }
   
   /* The Close Button */
   .next,
   .prev,
   .close {
-	color: #aaa;
+	color: #fff;
 	float: right;
-	font-size: 28px;
+	font-size: 40px;
 	font-weight: bold;
 	position: absolute;
+	z-index: 5;
+	opacity: 0.5;
+  }
+  .prev, .next {
+	background-image: url("images/arrow.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 2em;
+	height: 10em;
+	margin-top: -5em;
+	position: absolute;
+	top: 50%;
+	width: 4em;
 	z-index: 4;
+	opacity: 0.1;
   }
   .close{
-	top: 22%;
-	right: 21%;
+	top: 0;
+	right: 10px;
   }
-  .prev{
-	position: absolute;
-	top: 60%;
-	left: 21%;
+  .prev {
+	-moz-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
+	transform: scaleX(-1);
+	left: -3em
   }
-  .next{
-	position: absolute;
-	top: 60%;
-	right: 21%;
+  .next {
+	right: -3em
   }
 
   .next:hover,
@@ -138,6 +153,7 @@
 	color: black;
 	text-decoration: none;
 	cursor: pointer;
+	opacity: 1;
   }
 
 html, body, div, span, applet, object,

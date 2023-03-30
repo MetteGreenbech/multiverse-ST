@@ -26,6 +26,16 @@ var nImages = 0;
 	}
 	}
 
+document.addEventListener("keydown", function(event) {
+    if(event.key === "ArrowLeft"){
+        prevImage();
+    }
+    if(event.key === "ArrowRight"){
+        nextImage();
+    }
+});
+
+
 function showModal(src, num) {
     modal.style.display = "block";
     imageSrc = src;
